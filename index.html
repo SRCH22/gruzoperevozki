@@ -474,8 +474,7 @@
                 <!-- ПРОЕКТ 1 -->
                 <div class="project-card">
                     <div class="project-image-container">
-                        <img src="https://images.unsplash.com/photo-1634942537034-2531766767d1?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" 
-                             alt="Фирменный стиль Граффити" class="project-image">
+                        <img src="photo1.jpg" alt="Фирменный стиль Граффити" class="project-image">
                     </div>
                     <div class="project-content">
                         <h3 class="project-title">Фирменный стиль "Граффити"</h3>
@@ -495,8 +494,7 @@
                 <!-- ПРОЕКТ 2 -->
                 <div class="project-card">
                     <div class="project-image-container">
-                        <img src="https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" 
-                             alt="Реклама на авто" class="project-image">
+                        <img src="photo2.jpg" alt="Реклама на авто" class="project-image">
                     </div>
                     <div class="project-content">
                         <h3 class="project-title">Рекламный дизайн для авто</h3>
@@ -516,8 +514,7 @@
                 <!-- ПРОЕКТ 3 -->
                 <div class="project-card">
                     <div class="project-image-container">
-                        <img src="https://images.unsplash.com/photo-1551650975-87deedd944c3?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" 
-                             alt="Иллюстрации для веба" class="project-image">
+                        <img src="photo3.jpg" alt="Иллюстрации для веба" class="project-image">
                     </div>
                     <div class="project-content">
                         <h3 class="project-title">Иллюстрации для IT-компании</h3>
@@ -537,8 +534,7 @@
                 <!-- ПРОЕКТ 4 -->
                 <div class="project-card">
                     <div class="project-image-container">
-                        <img src="https://images.unsplash.com/photo-1559056199-641a0ac8b55e?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" 
-                             alt="Дизайн упаковки" class="project-image">
+                        <img src="photo4.jpg" alt="Дизайн упаковки" class="project-image">
                     </div>
                     <div class="project-content">
                         <h3 class="project-title">Упаковка премиум-косметики</h3>
@@ -558,8 +554,7 @@
                 <!-- ПРОЕКТ 5 -->
                 <div class="project-card">
                     <div class="project-image-container">
-                        <img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" 
-                             alt="Брендинг ресторана" class="project-image">
+                        <img src="photo5.jpg" alt="Брендинг для кофейни" class="project-image">
                     </div>
                     <div class="project-content">
                         <h3 class="project-title">Брендинг для кофейни</h3>
@@ -579,8 +574,7 @@
                 <!-- ПРОЕКТ 6 -->
                 <div class="project-card">
                     <div class="project-image-container">
-                        <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" 
-                             alt="Мобильное приложение" class="project-image">
+                        <img src="photo6.jpg" alt="Мобильное приложение" class="project-image">
                     </div>
                     <div class="project-content">
                         <h3 class="project-title">UI/UX для мобильного приложения</h3>
@@ -643,35 +637,6 @@
             
             // Проверяем при загрузке
             handleScrollAnimation();
-            
-            // Анимация ховера для социальных ссылок
-            const socialLinks = document.querySelectorAll('.social-link');
-            socialLinks.forEach(link => {
-                link.addEventListener('mouseenter', function() {
-                    this.style.transform = 'translateY(-3px) scale(1.05)';
-                });
-                
-                link.addEventListener('mouseleave', function() {
-                    this.style.transform = 'translateY(0) scale(1)';
-                });
-            });
-            
-            // Плавная анимация при клике на ссылки
-            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-                anchor.addEventListener('click', function(e) {
-                    e.preventDefault();
-                    const targetId = this.getAttribute('href');
-                    if(targetId === '#') return;
-                    
-                    const targetElement = document.querySelector(targetId);
-                    if(targetElement) {
-                        window.scrollTo({
-                            top: targetElement.offsetTop - 80,
-                            behavior: 'smooth'
-                        });
-                    }
-                });
-            });
         });
     </script>
 </body>
